@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHerePrep - Exam Preparation Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        .header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            max-width: 60px;
+            margin-right: 15px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #0073e6;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px;
+            background: linear-gradient(to right, #0073e6, #005bb5);
+            color: white;
+            font-size: 28px;
+        }
+
+        .hero button {
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: white;
+            color: #0073e6;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background: #f8f9fa;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar input {
+            width: 80%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: width 0.3s ease;
+        }
+
+        .search-bar input:focus {
+            width: 85%;
+            border-color: #0073e6;
+        }
+
+        .search-bar button {
+            padding: 12px;
+            font-size: 16px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            margin: 15px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .box h3 {
+            margin: 15px 0;
+            font-size: 22px;
+        }
+
+        .box a {
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .box a:hover {
+            color: #005bb5;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px;
+                font-size: 24px;
+            }
+
+            .search-bar input {
+                width: 70%;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                width: 80%;
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Logo -->
+    <div class="header">
+        <img src="https://your-logo-url.com/logo.png" class="logo" alt="Logo">
+        StudyHerePrep
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Notes</a>
+        <a href="#">PYQs</a>
+        <a href="#">Quizzes</a>
+        <a href="#">Login/Signup</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Prepare Smarter, Learn Faster!</h2>
+        <p>Get access to high-quality study materials, quizzes, and previous year questions.</p>
+        <button>Start Learning</button>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search for notes, PYQs, quizzes...">
+        <button>🔍</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="box">
+            <h3>100 Delhi Police PYQs</h3>
+            <a href="#">View Now</a>
+        </div>
+        <div class="box">
+            <h3>100 UP Police PYQs</h3>
+            <a href="#">View Now</a>
+        </div>
+        <div class="box">
+            <h3>100 SSC CGL PYQs</h3>
+            <a href="#">View Now</a>
+        </div>
+        <div class="box">
+            <h3>History Notes</h3>
+            <a href="#">View Now</a>
+        </div>
+        <div class="box">
+            <h3>Geography Notes</h3>
+            <a href="#">View Now</a>
+        </div>
+        <div class="box">
+            <h3>Static GK</h3>
+            <a href="#">View Now</a>
+        </div>
+        <div class="box">
+            <h3>Quizzes</h3>
+            <a href="#">Start Quiz</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Contact us: <a href="mailto:studyhereprep@gmail.com">studyhereprep@gmail.com</a>
+    </div>
+
+</body>
+</html>
